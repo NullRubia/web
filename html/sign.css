@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Ownglyph_ParkDaHyun";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Ownglyph_ParkDaHyun";
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: url(./sky.jpg) no-repeat fixed center/cover;
+}
+nav {
+  background-color: #555;
+  color: white;
+  position: sticky;
+  top: 0;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 100px;
+}
+nav li {
+  font-size: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+body {
+  padding: 40px;
+}
+main {
+  max-width: 600px;
+  font-size: 20px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  background-color: gray;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+div.radio-gender {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+div.radio-gender p {
+  font-weight: bold;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input,
+select,
+textarea,
+button {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="radio"],
+input[type=":checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+input[type="color"] {
+  width: 50px;
+  height: 40px;
+  padding: 0;
+  border: none;
+}
+fieldset {
+  border: 3px solid black;
+  padding: 15px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+legend {
+  font-weight: bold;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+button[type="submit"] {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: backgroun-color 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #388e3c;
+}
+.footer-text {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #777;
+}
+#footer2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.help {
+  position: fixed;
+  width: 100px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  color: blue;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.help:hover {
+  background-color: #388e3c;
+}
