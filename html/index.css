@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Ownglyph_ParkDaHyun";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+  font-size: 20px;
+  font-family: "Ownglyph_ParkDaHyun";
+  line-height: 1.6;
+}
+header#home {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}
+#back {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+.in {
+  background-color: white;
+  box-shadow: 0px 1px 5px darkgray;
+  header {
+    font-size: 30px;
+    padding: 0.5rem;
+    color: orangered;
+  }
+  h5 {
+    color: darkblue;
+  }
+  p {
+    padding: 0.5rem;
+    line-height: 1.6em;
+  }
+}
+img {
+  max-width: 100%;
+}
+nav {
+  background-color: #555;
+  color: white;
+  position: sticky;
+  top: 0;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 100px;
+}
+nav li {
+  font-size: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: blue;
+}
